@@ -13,3 +13,14 @@ canvas {
 	position: absolute;
 	z-index: -1;
 }
+
+.debugText {
+	font-family: Cascadia Code, cascadia-code;
+	font-size: 20px;
+	margin: 0px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+	text-align: right;
+	color: #FFFFFF;
+}

@@ -7,18 +7,8 @@ let worldCamera = {
 };
 
 function worldCameraRecalc(ctx, w, h) {
-	/*if (worldCamera.adjustedDim.w != w) {
-		worldCamera.position.x -= ((worldCamera.adjustedDim.w - w) / 2.0);
-		worldCamera.adjustedDim.w = w;
-	}
-	if (worldCamera.adjustedDim.h != h) {
-		worldCamera.position.y -= ((worldCamera.adjustedDim.h - h) / 2.0);
-		worldCamera.adjustedDim.h = h;
-	}*/
 	worldCamera.adjustedDim.w = w;
 	worldCamera.adjustedDim.h = h;
-
-	//console.log(worldCamera.position.y);
 }
 
 function translateWorldCameraX(x) {

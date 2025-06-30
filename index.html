@@ -21,15 +21,15 @@
 		<canvas id="renderingCanvas" class="renderCanv"></canvas>
 		<!--execute script contents-->
 		<script>
-		generateWorld();
-		canvas = document.getElementById("renderingCanvas");
-		ctx = canvas.getContext("2d");
-		observer.observe(canvas);
-		requestAnimationFrame(step);
+			generateWorld();
+			canvas = document.getElementById("renderingCanvas");
+			ctx = canvas.getContext("2d");
+			observer.observe(canvas);
+			requestAnimationFrame(step);
 		</script>
 		<div>
-			<button type="button">Test</button>
-			<p>Hi</p>
+			<p class="debugText">Simple shapes (indev v1.0.0)</p>
+			<p class="debugText" id="fpsCount">FPS: ...</p>
 		</div>
 	</body>
 </html>
