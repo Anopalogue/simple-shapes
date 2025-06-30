@@ -1,5 +1,6 @@
-const canvas = document.getElementById("renderingCanvas");
-const ctx = canvas.getContext("2d");
+let canvas;
+//const ctx = canvas.getContext("2d");
+let ctx;
 
 let width = 300;
 let height = 150;

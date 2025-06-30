@@ -23,6 +23,8 @@
 		<!--execute script contents-->
 		<script>
 		generateWorld();
+		canvas = document.getElementById("renderingCanvas");
+		ctx = canvas.getContext("2d");
 		observer.observe(canvas);
 		requestAnimationFrame(step);
 		</script>
