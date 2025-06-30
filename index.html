@@ -25,6 +25,7 @@
 			generateWorld();
 			canvas = document.getElementById("renderingCanvas");
 			ctx = canvas.getContext("2d");
+
 			observer.observe(canvas);
 			requestAnimationFrame(step);
 		</script>
@@ -34,7 +35,7 @@
 		</div>
 
 		<div id="contextMenu" class="context-menu" style="display:none">
-			<button>Hi</button>
+			<button onclick="createCircleClick()">Create circle</button>
 		</div>
 	</body>
 </html>

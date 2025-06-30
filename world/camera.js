@@ -19,3 +19,11 @@ function translateWorldCameraY(y) {
 	//return (y * worldCamera.scale) + worldCamera.position.y;
 	return ((y + worldCamera.position.y) * worldCamera.scale) + (worldCamera.adjustedDim.h / 2.0);
 }
+
+function detranslateWorldCameraX(x) {
+	return ((x - (worldCamera.adjustedDim.w / 2.0)) / worldCamera.scale) - worldCamera.position.x;
+}
+
+function detranslateWorldCameraY(y) {
+	return -(((y - (worldCamera.adjustedDim.h / 2.0)) / worldCamera.scale) - worldCamera.position.y);
+}
