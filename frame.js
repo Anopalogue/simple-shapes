@@ -7,7 +7,6 @@ const observer = new ResizeObserver((entries) => {
 	width = canvas.clientWidth;
 	height = canvas.clientHeight;
 })
-observer.observe(canvas);
 
 function step(timestamp) {
 	canvas.width = width;
@@ -20,5 +19,3 @@ function step(timestamp) {
 	ctx.restore();
 	requestAnimationFrame(step);
 }
-
-requestAnimationFrame(step);

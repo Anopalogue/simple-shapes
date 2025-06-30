@@ -2,21 +2,23 @@
 <html>
 	<head>
 		<title>Simple shapes</title>
-	</head>
-
-	<body>
-		<noscript>
-			<strong>Warning: </strong>Javascript required
-		</noscript>
-		<canvas id="renderingCanvas" class="renderCanv">
-
-		</canvas>
+		<canvas id="renderingCanvas" class="renderCanv"></canvas>
 		<link rel="stylesheet" href="style.css">
 		<script src="colors.js"></script>
 		<script src="world/camera.js"></script>
 		<script src="world/objects.js"></script>
 		<script src="render/world.js"></script>
 		<script src="frame.js"></script>
+	</head>
 
+	<body>
+		<noscript>
+			<strong>Warning: </strong>Javascript required
+		</noscript>
+		<script>
+		generateWorld();
+		observer.observe(canvas);
+		requestAnimationFrame(step);
+		</script>
 	</body>
 </html>

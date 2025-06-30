@@ -23,5 +23,3 @@ function generateWorld() {
 	obj = new worldObj();
 	worldAddObj(obj);
 }
-
-generateWorld();
