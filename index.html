@@ -6,10 +6,12 @@
 		<title>Simple shapes</title>
 		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" href="style.css">
+		<!--Script libarys-->
 		<script src="colors.js"></script>
 		<script src="world/camera.js"></script>
 		<script src="world/objects.js"></script>
 		<script src="render/world.js"></script>
+		<script src="frame.js"></script>
 		<noscript>
 			<strong>Warning: </strong>Javascript required
 		</noscript>
@@ -17,9 +19,6 @@
 
 	<body>
 		<canvas id="renderingCanvas" class="renderCanv"></canvas>
-		<!--Move fame.js to head after you move the dependent execute script contents to the body.-->
-		<script src="frame.js"></script>
-
 		<!--execute script contents-->
 		<script>
 		generateWorld();
@@ -28,5 +27,8 @@
 		observer.observe(canvas);
 		requestAnimationFrame(step);
 		</script>
+		<div>
+			<button type="button">Test</button>
+		</div>
 	</body>
 </html>
