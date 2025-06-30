@@ -16,11 +16,16 @@ canvas {
 
 .debugText {
 	font-family: Cascadia Code, cascadia-code;
-	font-size: 20px;
+	/* font-size: 11pt; */
 	margin: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
 	padding-top: 4px;
 	text-align: right;
 	color: #FFFFFF;
+}
+
+.context-menu {
+	position: absolute;
+	text-align: center;
 }
