@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
+		<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width" />
 		<title>Simple shapes</title>
-		<canvas id="renderingCanvas" class="renderCanv"></canvas>
+		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" href="style.css">
 		<script src="colors.js"></script>
 		<script src="world/camera.js"></script>
 		<script src="world/objects.js"></script>
 		<script src="render/world.js"></script>
-		<script src="frame.js"></script>
-	</head>
-
-	<body>
 		<noscript>
 			<strong>Warning: </strong>Javascript required
 		</noscript>
+	</head>
+
+	<body>
+		<canvas id="renderingCanvas" class="renderCanv"></canvas>
+		<!--Move fame.js to head after you move the dependent execute script contents to the body.-->
+		<script src="frame.js"></script>
+
+		<!--execute script contents-->
 		<script>
 		generateWorld();
 		observer.observe(canvas);
