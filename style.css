@@ -5,6 +5,7 @@ html, body {
 	margin: 0;
 	display: block;
 	position: fixed;
+	font-size: larger;
 }
 
 canvas {
@@ -27,5 +28,15 @@ canvas {
 
 .context-menu {
 	position: absolute;
+}
+.button {
+	position: absolute;
 	text-align: center;
+	color: white;
+	background-color: #00695A;
+	border: none;
+	display: grid;
+	font-size: large;
+	padding: 8px;
+	white-space: nowrap;
 }
