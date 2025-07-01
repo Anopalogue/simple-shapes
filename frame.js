@@ -12,8 +12,12 @@ const observer = new ResizeObserver((entries) => {
 let lastStepTime = 0.0;
 let currentFPS = 0;
 let updateTimeMS = 500.0;
+let lastTimestamp = 0.0;
 
 function step(timestamp) {
+	let tdif = (timestamp - lastTimestamp) / 1000.0;
+	lastTimestamp = timestamp;
+
 	if (timestamp - lastStepTime > updateTimeMS) {
 		var elem = document.getElementById("fpsCount");
 		elem.textContent = "FPS: " + (currentFPS / (updateTimeMS / 1000.0));
@@ -25,6 +29,10 @@ function step(timestamp) {
 	canvas.width = width;
 	canvas.height = height;
 	ctx.save();
+
+	if (tdif < 0.1) {
+		objectPhysicsStep(tdif);
+	}
 	
 	worldCameraRecalc(ctx, width, height);
 	renderWorld(ctx, width, height);
